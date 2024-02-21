@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on web/app dev projects and ML would be a bonus.
 - 📫 How to reach me - wasilkhan914@gmail.com
 - 😄 Pronouns: He/Him
-- ⚡ Fun fact: 
+
 
 <!---
 wasil914/wasil914 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
