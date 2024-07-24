@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPREP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>VPREP</h1>
+    </header>
+    <nav>
+        <select id="subjectDropdown" onchange="showSubject()">
+            <option value="" disabled selected>Select a Subject</option>
+            <option value="digitalLogicDesign">Digital Logic Design</option>
+            <option value="discreteMathematics">Discrete Mathematics</option>
+            <option value="calculusLaplaceTransform">Calculus and Laplace Transform</option>
+        </select>
+    </nav>
+    <main>
+        <section id="digitalLogicDesign" class="subject" style="display: none;">
+            <h2>Digital Logic Design</h2>
+            <p>Content for Digital Logic Design</p>
+        </section>
+        <section id="discreteMathematics" class="subject" style="display: none;">
+            <h2>Discrete Mathematics</h2>
+            <p>Content for Discrete Mathematics</p>
+        </section>
+        <section id="calculusLaplaceTransform" class="subject" style="display: none;">
+            <h2>Calculus and Laplace Transform</h2>
+            <p>Content for Calculus and Laplace Transform</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
