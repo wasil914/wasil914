@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VPREP</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>VPREP</h1>
+        <p>Your Free Resource for Video Lectures</p>
     </header>
     <nav>
         <select id="subjectDropdown" onchange="showSubject()">
@@ -24,7 +26,7 @@
             <p>Content for Digital Logic Design</p>
             <!-- Thumbnail image -->
             <div id="videoContainer">
-                <img src="https://i.vimeocdn.com/video/989727117_640.jpg" alt="Digital Logic Design" id="videoThumbnail" width="640" height="360" onclick="playVideo()">
+                <img src="https://i.vimeocdn.com/video/989727117_640.jpg" alt="Digital Logic Design" id="videoThumbnail" class="thumbnail" onclick="playVideo()">
             </div>
         </section>
         <section id="discreteMathematics" class="subject" style="display: none;">
@@ -36,6 +38,15 @@
             <p>Content for Calculus and Laplace Transform</p>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 VPREP. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
