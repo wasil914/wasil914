@@ -8,16 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <!-- Add this in the body section -->
-<div id="chatbot">
-    <h2>Chat with VPREP Bot</h2>
-    <div id="chatbox">
-        <div id="messages"></div>
-        <input type="text" id="userInput" placeholder="Type a message..." onkeydown="if(event.key === 'Enter') sendMessage()">
-        <button onclick="sendMessage()">Send</button>
-    </div>
-</div>
-
     <header>
         <h1>VPREP</h1>
         <p>Your Free Resource for Video Lectures</p>
@@ -57,8 +47,23 @@
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </footer>
+
+    <!-- Chatbot Button -->
+    <div id="chatbotButton" onclick="toggleChatbot()">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <!-- Chatbot Interface -->
+    <div id="chatbot" style="display: none;">
+        <h2>Chat with VPREP Bot</h2>
+        <div id="chatbox">
+            <div id="messages"></div>
+            <input type="text" id="userInput" placeholder="Type a message..." onkeydown="if(event.key === 'Enter') sendMessage()">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
 
