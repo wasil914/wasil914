@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    <!-- Add this in the body section -->
+<div id="chatbot">
+    <h2>Chat with VPREP Bot</h2>
+    <div id="chatbox">
+        <div id="messages"></div>
+        <input type="text" id="userInput" placeholder="Type a message..." onkeydown="if(event.key === 'Enter') sendMessage()">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
     <header>
         <h1>VPREP</h1>
         <p>Your Free Resource for Video Lectures</p>
