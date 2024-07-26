@@ -3,67 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VPREP</title>
+    <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>VPREP</h1>
-        <p>Your Free Resource for Video Lectures</p>
-    </header>
-    <nav>
-        <select id="subjectDropdown" onchange="showSubject()">
-            <option value="" disabled selected>Select a Subject</option>
-            <option value="digitalLogicDesign">Digital Logic Design</option>
-            <option value="discreteMathematics">Discrete Mathematics</option>
-            <option value="calculusLaplaceTransform">Calculus and Laplace Transform</option>
-        </select>
-    </nav>
-    <main>
-        <section id="digitalLogicDesign" class="subject" style="display: none;">
-            <h2>Digital Logic Design</h2>
-            <p>Content for Digital Logic Design</p>
-            <!-- Thumbnail image -->
-            <div id="videoContainer">
-                <img src="https://i.vimeocdn.com/video/989727117_640.jpg" alt="Digital Logic Design" id="videoThumbnail" class="thumbnail" onclick="playVideo()">
-            </div>
-        </section>
-        <section id="discreteMathematics" class="subject" style="display: none;">
-            <h2>Discrete Mathematics</h2>
-            <p>Content for Discrete Mathematics</p>
-        </section>
-        <section id="calculusLaplaceTransform" class="subject" style="display: none;">
-            <h2>Calculus and Laplace Transform</h2>
-            <p>Content for Calculus and Laplace Transform</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 VPREP. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </footer>
 
-    <!-- Chatbot Button -->
-    <div id="chatbotButton" onclick="toggleChatbot()">
-        <i class="fas fa-comment"></i>
-    </div>
+<h1>Tic-Tac-Toe</h1>
+<div class="board" id="board">
+    <div class="cell" data-index="0"></div>
+    <div class="cell" data-index="1"></div>
+    <div class="cell" data-index="2"></div>
+    <div class="cell" data-index="3"></div>
+    <div class="cell" data-index="4"></div>
+    <div class="cell" data-index="5"></div>
+    <div class="cell" data-index="6"></div>
+    <div class="cell" data-index="7"></div>
+    <div class="cell" data-index="8"></div>
+</div>
 
-    <!-- Chatbot Interface -->
-    <div id="chatbot" style="display: none;">
-        <h2>Chat with VPREP Bot</h2>
-        <div id="chatbox">
-            <div id="messages"></div>
-            <input type="text" id="userInput" placeholder="Type a message..." onkeydown="if(event.key === 'Enter') sendMessage()">
-            <button onclick="sendMessage()">Send</button>
-        </div>
-    </div>
+<p id="message"></p>
+<button id="restart">Restart Game</button>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
-
