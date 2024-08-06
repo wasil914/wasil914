@@ -23,7 +23,7 @@
             max-width: 600px;
             width: 100%;
         }
-        h1 {
+        h1, h2 {
             text-align: center;
         }
         input {
@@ -71,8 +71,12 @@
 
 <div class="container">
     <h1>Correlation Coefficient Calculator</h1>
-    <input type="text" id="xValues" placeholder="Enter X values (comma separated)">
-    <input type="text" id="yValues" placeholder="Enter Y values (comma separated)">
+    <h2>Given Data Sets:</h2>
+    <p>X: 2, 4, 6, 8, 10</p>
+    <p>Y: 1, 3, 5, 7, 9</p>
+    <p>Calculate the correlation coefficient (r) between the X and Y values. Interpret the result in terms of the strength and direction of the linear relationship between the two variables. Plot a scatter graph of the data points and visually confirm the nature of the relationship.</p>
+    <input type="text" id="xValues" placeholder="Enter X values (comma separated)" value="2,4,6,8,10">
+    <input type="text" id="yValues" placeholder="Enter Y values (comma separated)" value="1,3,5,7,9">
     <button onclick="calculateCorrelation()">Calculate</button>
     <div id="result" class="result"></div>
     <div class="chart-container">
@@ -135,5 +139,3 @@
 
 </body>
 </html>
-
-
