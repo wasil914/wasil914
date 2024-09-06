@@ -1,162 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slot Selector Test</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-
-        .slot-selector {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-
-        .slot-selector button {
-            width: 150px;
-            height: 50px;
-            margin: 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .modal-content {
-            background-color: #fff;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 400px;
-            text-align: center;
-        }
-
-        .slot-options {
-            max-height: 200px;
-            overflow-y: auto;
-        }
-
-        .slot-item {
-            padding: 10px;
-            margin: 5px 0;
-            background-color: #f1f1f1;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .slot-item:hover {
-            background-color: #ddd;
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
+    <title>Fall Semester Result</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h1>Slot Selector Test</h1>
-
-    <div class="slot-selector">
-        <button id="slot1">Select Slot 1</button>
-        <button id="slot2">Select Slot 2</button>
-        <button id="slot3">Select Slot 3</button>
-        <button id="slot4">Select Slot 4</button>
-        <button id="slot5">Select Slot 5</button>
-    </div>
-
-    <div id="slotModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="slot-options">
-                <div class="slot-item">8:30-10:00 (A11)</div>
-                <div class="slot-item">10:05-11:35 (B11)</div>
-                <div class="slot-item">11:40-13:10 (C11)</div>
-                <div class="slot-item">13:15-14:45 (A21)</div>
-                <div class="slot-item">14:50-16:20 (A14)</div>
-                <div class="slot-item">16:25-17:55 (B21)</div>
-                <div class="slot-item">18:00-19:30 (C21)</div>
-                <div class="slot-item">Null</div>
-                <!-- Add more slots as needed -->
-            </div>
+    <div class="header">
+        <div class="logo">
+            <img src="https://vitbhopal.ac.in/wp-content/uploads/2018/09/Logo.png" alt="VIT Bhopal Logo">
+        </div>
+        <div class="title">
+            <h1>Fall Semester Result 24-25</h1>
         </div>
     </div>
 
-    <button id="submit">Submit</button>
-
-    <script>
-        const slotButtons = document.querySelectorAll('.slot-selector button');
-        const modal = document.getElementById('slotModal');
-        const closeBtn = document.querySelector('.close');
-        const slotItems = document.querySelectorAll('.slot-item');
-
-        let activeSlotButton = null;
-
-        slotButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                activeSlotButton = button;
-                modal.style.display = "block";
-            });
-        });
-
-        closeBtn.addEventListener('click', () => {
-            modal.style.display = "none";
-        });
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-        slotItems.forEach(item => {
-            item.addEventListener('click', (event) => {
-                const selectedSlot = event.target.textContent;
-                if (activeSlotButton) {
-                    activeSlotButton.textContent = selectedSlot;
-                }
-                modal.style.display = "none";
-            });
-        });
-
-        document.getElementById('submit').addEventListener('click', () => {
-            const selectedSlots = {
-                slot1: document.getElementById('slot1').textContent,
-                slot2: document.getElementById('slot2').textContent,
-                slot3: document.getElementById('slot3').textContent,
-                slot4: document.getElementById('slot4').textContent,
-                slot5: document.getElementById('slot5').textContent,
-            };
-            console.log(selectedSlots);
-            // Here you would send selectedSlots to the backend via fetch if needed
-        });
-    </script>
-
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="input-box">
+                <img src="https://dummyimage.com/150x50/ccc/fff.png&text=4x8SYT" alt="Captcha">
+                <input type="text" placeholder="Enter CAPTCHA shown above" required>
+            </div>
+            <div class="actions">
+                <a href="#">Forgot Password</a>
+                <a href="#">Forgot Login ID</a>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
