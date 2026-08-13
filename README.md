@@ -1,16 +1,16 @@
-## Hi there 👋
+# Hi, I'm Wasil
 
-<!--
-**wasil914/wasil914** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Computer Science graduate focused on building with Python, Data, and AI.
 
-Here are some ideas to get you started:
+Currently exploring:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Python and backend development
+- SQL and data engineering
+- Generative AI and Agentic AI
+
+## What I'm Building
+
+A collection of projects and learning repositories where I document what I learn by building.
+
+
+Learn → Build → Improve → Repeat
