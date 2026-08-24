@@ -3,9 +3,7 @@
 Computer Science graduate focused on building with Python, Data, and AI.
 
 Currently exploring:
-
-- Python and backend development
-- SQL and data engineering
+- data engineering
 - Generative AI and Agentic AI
 
 ## What I'm Building
